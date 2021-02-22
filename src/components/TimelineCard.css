@@ -1,5 +1,34 @@
 .container{
-    background-color: black;
-    width: 100px;
-    height: 100px;
+    max-width: 700px;
+    height: 100%;
+    padding: 15px;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: #D4F1F4;
+    /* background: linear-gradient(#5EC2BA, #66D1B4, #7DDFA6, #A0EA94, #CAF381, #F9F871); */
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.head_col1{
+    width: fit-content;
+}
+.head_col2{
+    width: fit-content;
+}
+
+.body{
+    padding-top: 20px;
+    width: 100%;
+}
+.body ul{
+    margin-left: 15px;
+}
+.body ul li {
+    margin: 10px 0;
 }
