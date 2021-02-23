@@ -32,3 +32,10 @@
 .body ul li {
     margin: 10px 0;
 }
+
+/* media queries*/
+@media screen and (max-width: 900px){
+    .container{
+        width:78vw;
+    }
+}
