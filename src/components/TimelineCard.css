@@ -1,11 +1,11 @@
 .container{
+    width:40vw;
     max-width: 700px;
     height: 100%;
     padding: 15px;
     position: relative;
     border-radius: 10px;
-    border: 1px solid white;
-    background-color: #D4F1F4;
+    background-color: #F7F5F6;
     /* background: linear-gradient(#5EC2BA, #66D1B4, #7DDFA6, #A0EA94, #CAF381, #F9F871); */
 }
 

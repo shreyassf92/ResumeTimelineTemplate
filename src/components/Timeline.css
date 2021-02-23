@@ -1,0 +1,32 @@
+.listContainer{
+    list-style-type: None;
+    position: relative;
+}
+
+.items{
+    position: relative;
+    padding:20px 0;
+    width: 3px;
+    border-radius: 10px;
+    background-color: #B7AAA9;
+    margin: 0 auto;
+}
+
+.items::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 40px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: #ED747A;
+}
+
+li:nth-child(odd) div{
+    left:55px;
+}
+
+li:nth-child(even) div{
+    left: calc(-40vw - 55px);
+}
