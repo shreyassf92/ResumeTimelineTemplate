@@ -1,6 +1,7 @@
 {
   "name": "resume-timeline-template1",
   "version": "0.1.0",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
