@@ -20,10 +20,6 @@
     height: fit-content;
     color: white;
     text-align: center;
-    /* position: absolute;
-    top: 15%;
-    left: 50%; */
-    /* transform: translate(-50%, -50%); */
 }
 
 .about span{
@@ -44,13 +40,13 @@
     padding: 10px;
 }
 
+.contact{
+    padding: 10px;
+}
+
 .about{
     color: white;
     width: 80vw;
-    /* position: absolute; */
-    /* top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     text-align: justify;
     text-justify: newspaper;
 }
@@ -63,7 +59,7 @@
 
 .personalInfo{
     display: flex;
-    width: 200px;   
+    width: 250px;   
     margin: 20px 0;
     flex-wrap: wrap; 
     justify-content: space-evenly;
@@ -73,7 +69,7 @@
     color:white;
     text-decoration: none;
     text-align: center;
-    padding: 5px;
+    padding: 5px 10px;
 }
 
 .personalInfo > p{

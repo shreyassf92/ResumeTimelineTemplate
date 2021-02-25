@@ -20,7 +20,9 @@
     width:20px;
     height: 20px;
     background-color: transparent;
+    outline:none;
 }
+
 
 .body{
     padding-top: 20px;
@@ -38,7 +40,7 @@
 .body ul li::before {
     content: "\2022";
     position: absolute;
-    color: #ED747A;
+    color: #2b6777;
     left: -15px;
     top: 5px;
 }
