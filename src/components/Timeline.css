@@ -37,7 +37,17 @@ li:nth-child(even) div{
         margin: 0 0 0 40px;
     }
 
-    li:nth-child(even) div{
-        left: 55px;
+    li:nth-child(n) div{
+        left: 7vw;
+    }
+}
+
+@media screen and (max-width: 455px){
+    .items{
+        margin: 0 0 0 30px;
+    }
+
+    li:nth-child(n) div{
+        left: 7vw;
     }
 }
