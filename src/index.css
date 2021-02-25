@@ -3,4 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

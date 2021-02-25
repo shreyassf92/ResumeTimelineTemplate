@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import './App.css';
 import TimelineCard from './components/TimelineCard';
 import Timeline from './components/Timeline';
+import Wall from './components/Wall';
+import wall from './components/Wall';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-
+        <Wall />
         <Timeline>
           <TimelineCard title="Software Development Engineer – Intern"
             org="Advancing Technologies"

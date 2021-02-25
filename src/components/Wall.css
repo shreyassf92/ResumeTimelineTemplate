@@ -1,0 +1,84 @@
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    /* background-image: url(../../assets/bg2.jpg); */
+    background-color: #2b6777;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.maintext{
+    min-width: 320px;
+    width: 80vw;
+    margin: 50px 0;
+    height: fit-content;
+    color: white;
+    text-align: center;
+    /* position: absolute;
+    top: 15%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+.about span{
+    background-color: #c8d8e4;
+    padding: 4px;
+    font-size: 1.2rem;
+    width: fit-content;
+    height: 15px;
+    color: #2b6777;
+    font-weight: 600;
+    border-radius: 3px;
+
+}
+
+.name{
+    height: fit-content;
+    font-size: 2.5rem;
+    padding: 10px;
+}
+
+.about{
+    color: white;
+    width: 80vw;
+    /* position: absolute; */
+    /* top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+.about p{
+    line-height: 30px;
+    padding: 15px; 
+    font-size: 1rem;
+}
+
+.personalInfo{
+    display: flex;
+    width: 200px;   
+    margin: 20px 0;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+}
+
+.personalInfo > a{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.personalInfo > p{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
