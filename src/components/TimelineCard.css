@@ -14,8 +14,10 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 10px;
 }
 .head_col1{
+    margin-right: 20px;
     width: fit-content;
 }
 .head_col2{
@@ -30,7 +32,38 @@
     margin-left: 15px;
 }
 .body ul li {
+    position: relative;
     margin: 10px 0;
+    list-style: none;
+}
+
+.body ul li::before {
+    content: "\2022";
+    position: absolute;
+    color: #ED747A;
+    left: -15px;
+    top: 5px;
+}
+
+.container h4{
+    font-weight:200;
+    line-height: 24px;
+}
+
+.container p{
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight:200;
+    line-height: 24px;
+    padding-bottom: 5px;
+}
+
+.expand{
+    border: none;
+    width:fit-content;
+    height: fit-content;
+    margin-left: 50%;
+    background-color: transparent;
 }
 
 /* media queries*/
