@@ -21,7 +21,7 @@ const wall = () => {
             </div>
             <div className={Classes.personalInfo}>
                 <a href={data.links.linkedin} target="_blank">LinkedIn</a>
-                <a href={data.links.gitrepo} target="_blank">GitLab</a>
+                <a href={data.links.gitrepo} target="_blank">Git Repo</a>
             </div>
         </div>
     );

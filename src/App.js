@@ -3,9 +3,9 @@ import './App.css';
 import TimelineCard from './components/TimelineCard';
 import Timeline from './components/Timeline';
 import Wall from './components/Wall';
-import wall from './components/Wall';
 import data from '../src/data.json';
-import timeline from './components/Timeline';
+import ProjectCard from './components/ProjectCard';
+import ProjectCarousel from './components/ProjectCarousel';
 
 class App extends Component {
   render() {
@@ -22,10 +22,15 @@ class App extends Component {
     return (
       <div className="App">
         <Wall />
+
         <Timeline>
           {timelineItems}
         </Timeline>
 
+        <ProjectCarousel>
+          <ProjectCard />
+          <ProjectCard />
+        </ProjectCarousel>
       </div>
     );
   }
