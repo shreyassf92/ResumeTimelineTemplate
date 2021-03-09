@@ -1,15 +1,47 @@
 .container{
-    margin: 30px 0 60px 0;
-    width: 100%;
+    padding: 30px 0 60px 0;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
 }
 
-.innerContainer{
+.carouselStationary{
     margin-top: 30px;
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carouselSlider{
     display: flex;
-    flex-direction: column;
-    width: 70%;
+    overflow-x: auto;    
+    scroll-snap-type: x mandatory;
+}
+
+.carouselSlider > div{
+    width: 100%;
+    scroll-snap-align: center;
+}
+
+.leftSlider{
+    border: none;
+    outline: none; 
+    position: absolute;
+    background: none;
+    top: 50%;
+    left: 0;
+    transform: translate(0px, -10px);
+}
+
+.rightSlider{
+    border: none;
+    outline: none;
+    position: absolute;
+    background: none;
+    top: 50%;
+    right: 0;
+    transform: translate(0px, -10px);
 }

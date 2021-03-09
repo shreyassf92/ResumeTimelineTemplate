@@ -28,8 +28,9 @@ class App extends Component {
         </Timeline>
 
         <ProjectCarousel>
-          <ProjectCard />
-          <ProjectCard />
+          <ProjectCard title="project 1" />
+          <ProjectCard title="project 2" />
+          <ProjectCard title="project 3" />
         </ProjectCarousel>
       </div>
     );

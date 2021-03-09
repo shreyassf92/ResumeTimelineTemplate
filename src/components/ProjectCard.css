@@ -1,14 +1,12 @@
 .container{
-    width: 100%;
     display: flex;
+    flex-shrink: 0;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
     border-radius: 15px;
-    background-color: #F7F5F6;
-    margin: 20px;
-    
+    background-color: #2b6777;
 }
 
 .description{
@@ -17,16 +15,22 @@
     font-weight:400;
     line-height: 24px;
     letter-spacing: 0.35px;
+    color: white;
+}
+
+.title{
+    color: white;
 }
 
 .link{
-    color: black;
+    color: white;
     font-weight: 500;
     text-decoration: none;
     padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
 }
 
 .link:hover{
-    color: #2b6777;
-    border-bottom: 2px solid #2b6777;
+    color: white;
+    border-bottom: 3px solid white;
 }
