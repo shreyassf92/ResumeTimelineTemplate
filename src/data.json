@@ -14,14 +14,14 @@
             "org": "Advancing Technologies",
             "duration": "February 2021 – May 2021",
             "place": "Orlando, Florida",
-            "description": "Develop an android mobile application that provides performance analytics to athletes in combat sports. Implement components that establish connectivity between the app, wearable device, and analytics engine"
+            "description": "Create UI designs and develop screens for an android mobile application that provides performance analytics to athletes in combat sports.Design and implement database in MongoDB.Design and develop a serverless REST API backend on AWS using API Gateway and Lambda services"
         },
         {
             "title": "Information Technology Intern",
             "org": "FedEx Services",
             "duration": "August 2020 - November 2020",
             "place": "Collierville, Tennessee",
-            "description": "Design and develop a software solution that supports the organization’s transition to Software Defined Networks. Participate in agile ceremonies and meetings with different stakeholders to gather requirements. Provide presentations to management to encourage the usage of the tool"
+            "description": "Developed an automation workflow that fetches information of networking devices through REST API, performs extensive data validation, and updates the cleaned data into a centralized system; This supported the company’s transition to Software Defined Networks.Investigated performance issue and revamped the application to implement asynchronous design; enabled the program to run 12x faster.Developed an application that generates a report which shows the organization of ~160K networking devices in the FedEx data centers;The tool eliminated some of the manual tasks and assisted network engineers and data center capacity planners in their everyday activities.Participated in agile ceremonies and meetings with different stakeholders"
         },
         {
             "title": "Master's Degree, Computer Science",
