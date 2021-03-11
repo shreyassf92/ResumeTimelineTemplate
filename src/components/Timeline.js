@@ -9,6 +9,7 @@ const timeline = (props) => {
 
     return (
         <div className={Classes.container}>
+            <h1>Work & Education</h1>
             <ul className={Classes.listContainer}>
                 {childLi}
                 {/* <li>test1</li>

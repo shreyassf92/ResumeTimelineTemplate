@@ -7,10 +7,10 @@ const projectcard = (props) => {
             <h2 className={Classes.title}>{props.title}</h2>
 
             <p className={Classes.description}>
-                Computer Architecture Simulation Tools: Applied object-oriented programming concepts, design principles, design patterns to develop cache simulation, branch prediction & dynamic scheduling simulation tools in Java, under supervision of Dr. Yan Solihin
+                {props.description}
             </p>
 
-            <a className={Classes.link} href="/">git link</a>
+            <a className={Classes.link} href={props.link}>Repo Link</a>
         </div>
     );
 }

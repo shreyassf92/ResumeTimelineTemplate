@@ -44,5 +44,32 @@
             "place": "Bengaluru, India",
             "description": ""
         }
+    ],
+    "projects": [
+        {
+            "title": "Computer Architecture Simulation Application",
+            "description": "Applied object-oriented programming concepts, design principles, design patterns to develop cache simulation, branch prediction & dynamic scheduling simulation tools in Java, under supervision of Dr. Yan Solihin.",
+            "link": "https://github.com/shreyassf92"
+        },
+        {
+            "title": "Sentiment Analysis of Customer Reviews",
+            "description": "Applied text pre-processing methods and modeled a Naïve Bayes classifier as a baseline and developed more robust neural classification model using LSTM to classify a customer review into positive or negative.",
+            "link": "https://github.com/shreyassf92"
+        },
+        {
+            "title": "Visualization of US Non-Immigrant data",
+            "description": "Developed a web based, interactive visualization using R and D3(Java Script) to visualize & analyze US non-immigrant data using bubble plot, population pyramid, donut chart and geo visualization(choropleth).",
+            "link": "https://github.com/shreyassf92"
+        },
+        {
+            "title": "Resume Builder",
+            "description": "A SPA web application that organizes the resume into a rich UI using React.js. It features an open-close, timeline component that orders education and employment in a chronological order. And a carousel component that contains projects and its description.",
+            "link": "https://github.com/shreyassf92"
+        },
+        {
+            "title": "Geotab Intersection Congestion Prediction",
+            "description": "Performed feature engineering and developed a ML regression model to predict traffic congestion in an intersection.",
+            "link": "https://github.com/shreyassf92"
+        }
     ]
 }

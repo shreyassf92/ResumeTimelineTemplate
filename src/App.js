@@ -18,6 +18,12 @@ class App extends Component {
         description={timeEntry.description} />
     });
 
+    let projectCardItems = data.projects.map((projCard) => {
+      return <ProjectCard title={projCard.title}
+        description={projCard.description}
+        link={projCard.link} />
+    });
+
 
     return (
       <div className="App">
@@ -28,9 +34,7 @@ class App extends Component {
         </Timeline>
 
         <ProjectCarousel>
-          <ProjectCard title="project 1" />
-          <ProjectCard title="project 2" />
-          <ProjectCard title="project 3" />
+          {projectCardItems}
         </ProjectCarousel>
       </div>
     );
