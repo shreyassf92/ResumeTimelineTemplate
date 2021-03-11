@@ -10,7 +10,7 @@ const projectcard = (props) => {
                 {props.description}
             </p>
 
-            <a className={Classes.link} href={props.link}>Repo Link</a>
+            <a className={Classes.link} href={props.link} target="_blank">Repo Link</a>
         </div>
     );
 }
