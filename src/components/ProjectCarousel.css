@@ -11,14 +11,14 @@
     margin-top: 30px;
     max-width: 900px;
     width: 100%;
-    overflow: hidden;
     position: relative;
+    display: flex;
 }
 
 .carouselSlider{
     display: flex;
-    overflow-x: auto;    
-    scroll-snap-type: x mandatory;
+    overflow-x: hidden;    
+    /* scroll-snap-type: x mandatory; */
 }
 
 .carouselSlider > div{
@@ -31,9 +31,9 @@
     outline: none; 
     position: absolute;
     background: none;
-    top: 50%;
     left: 0;
     transform: translate(0px, -10px);
+    height: 100%;
 }
 
 .rightSlider{
@@ -41,7 +41,33 @@
     outline: none;
     position: absolute;
     background: none;
-    top: 50%;
     right: 0;
     transform: translate(0px, -10px);
+    height: 100%;
+}
+
+.sliderIndicator{
+    margin: 20px 0 20px 0;
+}
+
+.sliderIndicator > input[type="radio"]{
+    margin: 0px 5px 0px 5px;
+    height: 5px;
+    width: 5x;
+    border: none;
+}
+
+.sliderIndicator > input[type="radio"]::after{
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #2b6777;
+
+}
+
+.sliderIndicator > input[type="radio"]:checked::after{
+    background-color:  #2b6777;
 }
