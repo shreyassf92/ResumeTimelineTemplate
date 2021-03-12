@@ -10,8 +10,3 @@
 ::-webkit-scrollbar {
   display: none;
 }
-
-:root {
-  --blue: #1e90ff;
-  --white: #ffffff;
-}
