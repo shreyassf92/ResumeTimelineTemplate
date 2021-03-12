@@ -4,9 +4,14 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   scrollbar-width: none;
-  -ms-overflow-style: none; 
+  -ms-overflow-style: none;
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
 }

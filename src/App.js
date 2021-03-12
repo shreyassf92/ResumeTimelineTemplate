@@ -8,20 +8,15 @@ import ProjectCard from './components/ProjectCard';
 import ProjectCarousel from './components/ProjectCarousel';
 
 class App extends Component {
+
   render() {
 
     let timelineItems = data.timeline.map((timeEntry) => {
-      return <TimelineCard title={timeEntry.title}
-        org={timeEntry.org}
-        duration={timeEntry.duration}
-        place={timeEntry.place}
-        description={timeEntry.description} />
+      return <TimelineCard {...timeEntry} />
     });
 
     let projectCardItems = data.projects.map((projCard) => {
-      return <ProjectCard title={projCard.title}
-        description={projCard.description}
-        link={projCard.link} />
+      return <ProjectCard {...projCard} />
     });
 
 
