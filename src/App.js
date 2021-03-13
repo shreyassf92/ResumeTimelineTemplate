@@ -9,16 +9,37 @@ import ProjectCarousel from './components/ProjectCarousel';
 
 class App extends Component {
 
+  constructor() {
+
+    super();
+
+    this.state = {
+      showProject: false
+    }
+  }
+
+  componentDidMount() {
+
+    document.addEventListener('scroll', () => {
+      console.log(window.scrollY);
+
+      if (window.scrollY > 800)
+        this.setState({ showProject: true })
+
+    });
+  }
+
   render() {
 
+    let n = 0;
     let timelineItems = data.timeline.map((timeEntry) => {
-      return <TimelineCard {...timeEntry} />
+      return <TimelineCard key={n++} {...timeEntry} />
     });
 
+    n = 0;
     let projectCardItems = data.projects.map((projCard) => {
-      return <ProjectCard {...projCard} />
+      return <ProjectCard key={n++} {...projCard} />
     });
-
 
     return (
       <div className="App">
@@ -28,9 +49,11 @@ class App extends Component {
           {timelineItems}
         </Timeline>
 
-        <ProjectCarousel>
-          {projectCardItems}
-        </ProjectCarousel>
+        {this.state.showProject &&
+          <ProjectCarousel>
+            {projectCardItems}
+          </ProjectCarousel>
+        }
       </div>
     );
   }
