@@ -3,40 +3,20 @@ import Classes from './ProjectCarousel.css';
 
 const projectcarousel = (props) => {
 
-    const [currCard, setCurrCard] = useState(null);
-
     const [cardId, setCardId] = useState(0);
-
     const parentNode = useRef(null);
 
     useEffect(() => {
-        setCurrCard(parentNode.current.children[0]);
 
-    }, [parentNode]);
+        parentNode.current.children[parseInt(cardId)].scrollIntoView({ behavior: 'smooth' });
 
-    const scrollRight = () => {
-        if (currCard.nextElementSibling !== null) {
-            currCard.nextElementSibling.scrollIntoView({ behavior: 'smooth' });
-            setCurrCard(currCard.nextElementSibling);
-        }
-        if (cardId < parentNode.current.children.length - 1)
-            setCardId(cardId + 1);
-    };
+    }, [parentNode, cardId]);
 
-    const scrollLeft = () => {
-        if (currCard.previousElementSibling !== null) {
-            currCard.previousElementSibling.scrollIntoView({ behavior: 'smooth' });
-            setCurrCard(currCard.previousElementSibling);
+    const scrollRight = () => setCardId(Math.min(parentNode.current.childElementCount - 1, cardId + 1));
 
-            if (cardId > 0)
-                setCardId(cardId - 1);
-        }
-    };
+    const scrollLeft = () => setCardId(Math.max(0, cardId - 1));
 
-    const onRadioChange = (e) => {
-        setCardId(parseInt(e.target.id));
-        parentNode.current.children[parseInt(e.target.id)].scrollIntoView({ behavior: 'smooth' });
-    }
+    const onRadioChange = (e) => setCardId(parseInt(e.target.id));
 
     let n = 0;
     let radio = Children.map(props.children, (child, id) => {

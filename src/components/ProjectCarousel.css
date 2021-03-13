@@ -23,7 +23,7 @@
 
 .carouselSlider > div{
     width: 100%;
-    scroll-snap-align: center;
+    /* scroll-snap-align: center; */
 }
 
 .leftSlider{
