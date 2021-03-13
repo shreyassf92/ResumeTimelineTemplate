@@ -5,8 +5,7 @@
     padding: 15px;
     position: relative;
     border-radius: 10px;
-    background-color: #F7F5F6;
-    /* background: linear-gradient(#5EC2BA, #66D1B4, #7DDFA6, #A0EA94, #CAF381, #F9F871); */
+    background-color: var(--tertiary-color);
 }
 
 .head{
@@ -43,13 +42,14 @@
 .body ul li::before {
     content: "\2022";
     position: absolute;
-    color: #2b6777;
+    color: var(--primary-color);;
     left: -15px;
     top: 5px;
 }
 
 .container h{
     padding: 10px;
+    color: var(--dark-text-color);
 }
 .container h4{
     font-weight:500;
@@ -62,6 +62,7 @@
     font-weight:400;
     line-height: 24px;
     padding-bottom: 5px;
+    color: var(--dark-text-color);
 }
 
 /* media queries*/

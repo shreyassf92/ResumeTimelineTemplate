@@ -10,3 +10,11 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+:root{
+  --primary-color: #2b6777;
+  --secondary-color: #c8d8e4;
+  --tertiary-color: #F7F5F6;
+  --dark-text-color: black;
+  --light-text-color: white;
+}

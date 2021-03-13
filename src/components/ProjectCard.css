@@ -6,7 +6,7 @@
     align-items: center;
     padding: 20px;
     border-radius: 7px;
-    background-color: #2b6777;
+    background-color: var(--primary-color);
 }
 
 .description{

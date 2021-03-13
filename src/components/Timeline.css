@@ -18,7 +18,7 @@
     padding:20px 0;
     width: 3px;
     border-radius: 10px;
-    background-color: #c8d8e4;
+    background-color: var(--secondary-color);
     margin: 0 auto;
 }
 
@@ -30,7 +30,7 @@
     bottom: 40px;
     transform: translateX(-50%);
     border-radius: 50%;
-    background: #c8d8e4;
+    background: var(--secondary-color);
 }
 
 li:nth-child(odd) div{

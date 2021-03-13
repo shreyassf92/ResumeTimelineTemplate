@@ -1,7 +1,7 @@
 .container{
     width: 100vw;
     min-height: 100vh;
-    background-color: #2b6777;
+    background-color: var(--primary-color);
     background-size: cover;
     background-position: center;
 
@@ -22,12 +22,12 @@
 }
 
 .about span{
-    background-color: #c8d8e4;
+    background-color: var(--secondary-color);
     padding: 4px;
     font-size: 1.2rem;
     width: fit-content;
     height: 15px;
-    color: #2b6777;
+    color: var(--primary-color);
     font-weight: 600;
     border-radius: 3px;
 

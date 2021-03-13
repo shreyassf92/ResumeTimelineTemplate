@@ -64,10 +64,10 @@
     background-color: white;
     position: absolute;
     border-radius: 50%;
-    border: 2px solid #2b6777;
+    border: 2px solid var(--primary-color);
 
 }
 
 .sliderIndicator > input[type="radio"]:checked::after{
-    background-color:  #2b6777;
+    background-color:  var(--primary-color);;
 }
