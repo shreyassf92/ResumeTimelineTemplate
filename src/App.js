@@ -23,7 +23,7 @@ class App extends Component {
     document.addEventListener('scroll', () => {
 
       if (!this.state.showProject)
-        if (window.scrollY >= this.container.current.children[1].offsetHeight) {
+        if (window.scrollY >= this.container.current.clientHeight - window.innerHeight - 10) {
           this.setState({ showProject: true });
         }
 

@@ -24,6 +24,13 @@
             "description": "Developed an automation workflow that fetches information of networking devices through REST API, performs extensive data validation, and updates the cleaned data into a centralized system; This supported the company’s transition to Software Defined Networks.Investigated performance issue and revamped the application to implement asynchronous design; enabled the program to run 12x faster.Developed an application that generates a report which shows the organization of ~160K networking devices in the FedEx data centers;The tool eliminated some of the manual tasks and assisted network engineers and data center capacity planners in their everyday activities.Participated in agile ceremonies and meetings with different stakeholders"
         },
         {
+            "title": "Graduate Teaching Assitant",
+            "org": "University of Central Florida",
+            "duration": "August 2019 - May 2021",
+            "place": "Orlando, Florida",
+            "description": "Conduct labs and office hours. Assists Faculty in creating assignments, proctoring exams and grading"
+        },
+        {
             "title": "Master's Degree, Computer Science",
             "org": "University of Central Florida",
             "duration": "August 2019 - May 2021",
