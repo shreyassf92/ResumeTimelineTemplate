@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useRef } from 'react';
 import './App.css';
 import TimelineCard from './components/TimelineCard';
 import Timeline from './components/Timeline';
@@ -10,9 +10,9 @@ import ProjectCarousel from './components/ProjectCarousel';
 class App extends Component {
 
   constructor() {
-
     super();
 
+    this.container = React.createRef(null);
     this.state = {
       showProject: false
     }
@@ -21,16 +21,17 @@ class App extends Component {
   componentDidMount() {
 
     document.addEventListener('scroll', () => {
-      console.log(window.scrollY);
 
-      if (window.scrollY > 800)
-        this.setState({ showProject: true })
+      if (!this.state.showProject)
+        if (window.scrollY >= this.container.current.children[1].offsetHeight) {
+          this.setState({ showProject: true });
+        }
 
     });
+
   }
 
   render() {
-
     let n = 0;
     let timelineItems = data.timeline.map((timeEntry) => {
       return <TimelineCard key={n++} {...timeEntry} />
@@ -42,7 +43,7 @@ class App extends Component {
     });
 
     return (
-      <div className="App">
+      <div className="App" ref={this.container}>
         <Wall />
 
         <Timeline>
